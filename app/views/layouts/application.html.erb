@@ -27,7 +27,7 @@
                 <%= link_to "ログアウト", destroy_user_session_path, mathod: :delete, class: 'nav-link text-dark' %>
               </li>
               <li class="nav-item">
-                <%= link_to '投稿フォーム', new_post_image_path, class= 'nav-kink text-dark' %>
+                <%= link_to '投稿フォーム', new_post_image_path, class: 'nav-link text-dark' %>
               </li>
               <li class="nav-item">
               <%= link_to 'マイページ', user_path(current_user.id), class: 'nav-link text-dark' %>
@@ -45,6 +45,7 @@
         </div>
       </nav>
     </header>
+
     <main class="mb-auto">
     <%= yield %>
     </main>
